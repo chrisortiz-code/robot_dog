@@ -1,0 +1,5 @@
+go2env/
+unitree_sdk2_python/
+__pycache__/
+*.pyc
+.claude/
