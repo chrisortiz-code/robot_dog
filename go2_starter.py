@@ -124,11 +124,12 @@ def main():
     client.SetTimeout(10.0)
     client.Init()
 
-    print("Connected! Type 'help' to see commands.\n")
+    print("Connected! Type 'help' to see commands.\n", flush=True)
     show_help()
 
     while True:
         try:
+            sys.stdout.flush()
             cmd = input("go2> ")
             if not cmd.strip():
                 continue
